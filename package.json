@@ -1,0 +1,19 @@
+{
+  "name": "netent-slot",
+  "version": "1.0.1",
+  "description": "Test slot",
+  "main": "index.js",
+  "repository": "ssh://35.159.8.210/srv/git/slot.git",
+  "author": "Netent",
+  "license": "Netent",
+
+  "scripts": {
+    "env": "env",
+    "build:clean": "rm -rf build",
+    "build:init": "npm run 'build:clean' && mkdir -p build; (cd build; mkdir -p BUILD BUILDROOT RPMS SOURCES SPECS SRPMS)",
+    "build:src" : "npm run 'build:init' && ./scripts/buildSrc.sh",
+    "build:rpm": "npm run 'build:src' && ./scripts/buildRpm.sh"
+    }
+
+
+}
