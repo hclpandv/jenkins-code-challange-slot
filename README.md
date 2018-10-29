@@ -9,7 +9,7 @@ the application currently running at http://18.195.116.69/
 * the git server is re-stored uisng the tar file provided to me via a cloud link.
 * below command can be used to clone the repository on any workstation . make sure you have ssh keys in place on your system.
 
-    git clone ssh://ec2-user@54.93.218.82:/srv/git/slot.git
+    `git clone ssh://ec2-user@54.93.218.82:/srv/git/slot.git`
     
 * the package.json was re-stored from `./build/SOURCE` folder which had missing links to call and execute `buildRpm.sh` script to build the RPM.
 
